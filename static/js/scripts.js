@@ -22,7 +22,7 @@ document.getElementById('weatherForm').addEventListener('submit', function (even
             document.getElementById('description').textContent = `Description: ${weatherData.description}`;
 
             // Set Google Maps iframe
-            const mapSrc = `https://www.google.com/maps/embed/v1/place?q=${encodeURIComponent(city)}&key=AIzaSyBqE7fDXaMEdoWlJZn3cAFqBuwXcyacW9k`;
+            const mapSrc = `https://www.google.com/maps/embed/v1/place?q=${encodeURIComponent(city)}&key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`; // Give your Google Maps API
             document.getElementById('map').innerHTML = `<iframe src="${mapSrc}" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`;
         })
         .catch(error => {
